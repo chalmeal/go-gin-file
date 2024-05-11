@@ -36,9 +36,9 @@ S3を想定したファイルダウンロード/アップロード実装です�
 | [users](https://github.com/chalmeal/go-gin-file/blob/master/.doc/data/users.md) | ユーザーテーブル。サービスの利用者情報。             |
 
 ### 仕様
-| 書名                                                                                    | 概要                                      |
-| --------------------------------------------------------------------------------------- | ----------------------------------------- |
-| [ファイル利用](https://github.com/chalmeal/go-gin-file/blob/master/.doc/method/file.md) | ファイルアップロード/ダウンロードについて |
+| 書名                                                                                            | 概要                                      |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [ファイル利用](https://github.com/chalmeal/go-gin-file/blob/master/.doc/method/ファイル利用.md) | ファイルアップロード/ダウンロードについて |
 
 ## セットアップ
 
@@ -46,7 +46,7 @@ S3を想定したファイルダウンロード/アップロード実装です�
 * DBの環境は以下を想定します。
   * MySQL
   * GORM
-* create schemaのみ行う必要があります。[DDL](.db/setup/ddl-create-chema.sql)
+* create schemaのみ行う必要があります。[DDL](.db/setup/ddl-create-schema.sql)
 * [app.ini](config/app.ini)に対してDB接続情報を定義してください。
 * テーブルはGORMが提供するAutoMigrateを利用します。
   * 各テーブルは初回API実行時に生成されます。
